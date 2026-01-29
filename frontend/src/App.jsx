@@ -2,7 +2,9 @@ import { useMemo, useState, useCallback, useEffect } from "react";
 import { useDropzone } from "react-dropzone";
 import "./App.css";
 
-const API = "http://127.0.0.1:8000";
+const API = import.meta.env.VITE_API_URL;
+
+fetch(`${API}/convert`)
 
 function downloadBlob(blob, filename) {
   const a = document.createElement("a");
