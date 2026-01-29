@@ -27,6 +27,12 @@ app.add_middleware(
 ALLOWED_OUT = {"jpg", "jpeg", "png", "webp", "bmp", "tiff"}
 
 
+
+@app.get("/")
+def root():
+    return {"status": "ok", "message": "API running. Go to /docs"}
+
+
 @app.post("/convert-image")
 async def convert_image(
     file: UploadFile = File(...),
