@@ -26,7 +26,7 @@ A web app to convert images between formats and merge PDFs for free.
 
 ## Usage
 
-**1.** Open the website [here](link).
+**1.** Open the website [here](https://image-converter-pdf-merge.netlify.app/).
 
 **2.** Upload an image or multiple PDFs.
 
